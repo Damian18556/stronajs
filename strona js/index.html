@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/forms.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/clock.controller.js"></script>
+    <script> var app = angular.module('myApp', ['components.clock']);
+    </script>
+	
+    <title>Premier League</title>
+</head>
+
+<body ng-app="myApp">
+
+
+	<header>
+	
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav mr-auto">
+				
+					<li class="nav-item active">
+						<a class="nav-link" href="#jeden"> Start </a>
+					</li>
+		  
+                    <li class="nav-item active">
+						<a class="nav-link" href="#dwa"> Zespoły </a>
+					</li>
+					
+					<li class="nav-item active">
+						<a class="nav-link" href="#trzy"> Top six </a>
+					</li>
+					
+					<li class="nav-item active">
+						<a class="nav-link" href="#cztery"> Ciekawostki </a>
+					</li>
+					
+					<li class="nav-item active">
+						<a class="nav-link" href="#piec"> Info </a>
+					</li>
+					
+					 
+				     <form class="form-inline">
+				
+					 <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+					 <button class="btn btn-light" type="submit">Znajdź</button>
+				
+				     </form>
+				</ul>
+				<div>
+					<g>
+						Godzina
+						<div clock></div>
+					</g>	
+					 </div>
+        </div>
+      </nav>
+	</header>
+	
+<section id="jeden">
+    <div class="jedenn">
+ <div class="jumbotron">
+  <div class="container">
+   <h1><g> Premier League </g></h1>
+    <p id="info">
+	Premier League – najwyższa w hierarchii klasa męskich ligowych rozgrywek piłkarskich w Anglii, 
+	będąca jednocześnie najwyższym szczeblem centralnym (I poziom ligowy), utworzona w 1992 roku i zarządzana 
+	od samego początku przez FA Premier League.
+    Zmagania w jej ramach toczą się cyklicznie 
+	(co sezon od sierpnia do maja) i przeznaczone są dla 20 najlepszych krajowych klubów piłkarskich. 
+	Jej triumfator zostaje Mistrzem Anglii, zaś najsłabsze drużyny są relegowane do Championship (II ligi angielskiej).
+
+    Liga została założona jako FA Premier League 20 lutego 1992 roku po tym jak zespoły Football League First Division 
+	zdecydowały stać się niezależne od The Football League powstałej w 1888 roku oraz Football Association. 
+	Czerpała ona zyski z praw telewizyjnych. Od tego czasu Premier League jest najchętniej oglądaną ligą sportową 
+	na świecie. Są to także najbardziej dochodowe rozgrywki piłkarskie.
+	</p>
+   </div>
+  </div>
+  </div>
+</section>
+
+<section id="dwa" ng-controller="GalleryListCtrl" class="ng-scope">
+ <div class="dwaa">
+<div class="container">
+<h1><g>Zespoły Premier League</g></h1>
+ <div class="row">
+  <div class="col-sm-4">
+  <a href="#" data-toggle="modal" data-target="#myOptions1">
+  <img src="img/av.jpg" width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+  </a>
+  <h3 class="text-center text-info"><k>Aston Villa</k></h3>
+  <div class="modal fade" id="myOptions1" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Aston Villa Football Club <br>
+Przydomek - The Villans <br>
+Barwy - bordowo-niebiesko-białe <br>
+Data założenia - 1874 <br>
+Liga - Premier League <br>
+Państwo	- Wielka Brytania <br>
+Stadion	- Villa Park <br>
+Trener - Dean Smith <br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+  </div>
+
+ <div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions2">
+ <img src="img/ars.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Arsenal</k></h3>
+ <div class="modal fade" id="myOptions2" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Arsenal Football Club <br>
+Przydomek - The Gunners (Kanonierzy) <br>
+Maskotka - Gunnersaurus Rex <br>
+Barwy - czerwono-białe <br>
+Data założenia - Październik 1886r <br>
+Liga - Premier League <br>
+Państwo	- Wielka Brytania <br>
+Adres - Holloway, Londyn <br>
+Stadion	- Emirates Stadium 
+(Pojemność: 60361) <br>
+Trener - Mikel Arteta <br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+ </div>
+
+ <div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions3">
+ <img src="img/afcb.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Bournemouth</k></h3>
+ 
+<div class="modal fade" id="myOptions3" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Athletic Football Club Bournemouth <br>
+Przydomek - The Cherries <br>
+Data założenia - 1899 <br>
+Liga - Premier League <br>
+Państwo	- Wielka Brytania <br>
+Stadion	- Dean Court <br>
+Prezes - Jeff Mostyn <br>
+Trener - Eddie Howe <br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <a href="#" data-toggle="modal" data-target="#myOptions4">
+  <img src="img/burnley.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+  </a>
+  <h3 class="text-center text-info"><k>Burnley</k></h3>
+  <div class="modal fade" id="myOptions4" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Burnley Football Club <br>
+Przydomek - The Clarets <br>
+Barwy - bordowo-niebieskie<br>
+Data założenia - 1882<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Turf Moor<br>
+Prezes - Barry Kilby<br>
+Trener - Sean Dyche<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+  </div>
+
+ <div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions5">
+ <img src="img/brighton.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Brighton & Hove Albion</k></h3>
+ <div class="modal fade" id="myOptions5" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Brighton & Hove Albion Football Club <br>
+Przydomek - The Seagulls (Mewy) <br>
+Data założenia - 21 sierpnia 1901 <br>
+Liga - Premier League <br>
+Państwo	- Wielka Brytania <br>
+Stadion - Falmer Stadium <br>
+Pojemność - 30 750 <br>
+Prezes - Tony Bloom <br>
+Trener - Graham Potter <br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+ </div>
+
+ <div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions6">
+ <img src="img/palace.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Crystal Palace</k></h3>
+ 
+<div class="modal fade" id="myOptions6" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3>
+<j>
+Pełna nazwa	Crystal Palace Football Club <br>
+Przydomek - The Eagles (Orły) <br>
+Data założenia - 1905 <br>
+Liga - Premier League <br>
+Państwo - Wielka Brytania <br>
+Stadion - Selhurst Park <br>
+Prezes - Steve Parish <br>
+Trener - Roy Hodgson <br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions7">
+ <img src="img/czelsi.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Chelsea</k></h3>
+ 
+<div class="modal fade" id="myOptions7" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Chelsea Football Club<br>
+Przydomek - The Blues<br>
+Barwy - niebieskie<br>
+Data założenia - 10 marca 1905<br>
+Debiut w najwyższej lidze - 1907<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Stamford Bridge<br>
+Właściciel - Roman Abramowicz<br>
+Trener - Frank Lampard<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions8">
+ <img src="img/everton.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Everton</k></h3>
+ 
+<div class="modal fade" id="myOptions8" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Everton Football Club<br>
+Przydomek - The Toffees (Toffi)<br>
+Barwy - niebiesko-białe<br>
+Debiut w najwyższej lidze - 1888<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Goodison Park<br>
+Prezes - Bill Kenwright<br>
+Trener - Carlo Ancelotti<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions9">
+ <img src="img/lester.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Leicester City</k></h3>
+ 
+<div class="modal fade" id="myOptions9" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Leicester City Football Club<br>
+Przydomek - The Foxes (Lisy)<br>
+Maskotka - Lis Filbert<br>
+Data założenia - 1884<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - King Power Stadium<br>
+Prezes - Aiyawatt Srivaddhanaprabha<br>
+Trener - Brendan Rodgers<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions10">
+ <img src="img/liver.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Liverpool</k></h3>
+ 
+<div class="modal fade" id="myOptions10" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	The Liverpool Football Club<br>
+Przydomek - The Reds (Czerwoni)<br>
+Maskotka - Mighty Red<br>
+Barwy - czerwone<br>
+Data założenia - 3 czerwca 1892<br>
+Debiut w najwyższej lidze - 1 września 1894<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Adres - Anfield Road<br>
+Stadion	Anfield - Pojemność: 53 394<br>
+Prezes - Tom Werner<br>
+Menedżer - Jürgen Klopp<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions11">
+ <img src="img/mcity.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Manchester City</k></h3>
+ 
+<div class="modal fade" id="myOptions11" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Manchester City Football Club<br>
+Przydomek - The Citizens (Obywatele)<br>
+Barwy - niebiesko-białe<br>
+Data założenia - 1880<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Etihad Stadium<br>
+Prezes - Khaldoon Al Mubarak<br>
+Trener - Pep Guardiola<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions12">
+ <img src="img/mutd.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Manchester United</k></h3>
+ 
+<div class="modal fade" id="myOptions12" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Manchester United Football Club<br>
+Przydomek - Red Devils (Czerwone Diabły)<br>
+Maskotka - Fred The Red<br>
+Barwy - czerwono-biało-czarne<br>
+Data założenia - 1878 <br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Old Trafford<br>
+Prezes - Joel i Avram Glazer<br>
+Trener - Ole Gunnar Solskjær<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions13">
+ <img src="img/newcastle.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Newcastle</k></h3>
+ 
+<div class="modal fade" id="myOptions13" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Newcastle United Football Club<br>
+Przydomek - The Magpies (Sroki)<br>
+Barwy - czarno-białe<br>
+Data założenia - 1892<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - St James’ Park<br>
+Prezes - Lee Charnley<br>
+Trener - Steve Bruce<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div> 
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions14">
+ <img src="img/norwich.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Norwich City</k></h3>
+ 
+<div class="modal fade" id="myOptions14" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Norwich City Football Club <br>
+Przydomek - The Canaries (Kanarki)<br>
+Barwy - żółto-zielone <br>
+Data założenia - 1902<br>
+Liga - Premier League<br>
+Państwo - Wielka Brytania<br>
+Stadion - Carrow Road<br>
+Prezes - Alan Bowkett<br>
+Trener - Daniel Farke<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions15">
+ <img src="img/scheffield.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Sheffield United</k></h3>
+ 
+<div class="modal fade" id="myOptions15" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Sheffield United Football Club<br>
+Przydomek - The Blades (Szable)<br>
+Data założenia - 1889<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - Bramall Lane<br>
+Prezes - David Green<br>
+Trener - Chris Wilder<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions16">
+ <img src="img/south.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Southampton</k></h3>
+ 
+<div class="modal fade" id="myOptions16" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Southampton Football Club<br>
+Przydomek - The Saints (Święci)<br>
+Barwy - czerwono–biało–czarne<br>
+Data założenia - 1885<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - St Mary’s Stadium<br>
+Prezes - Ralph Krueger<br>
+Trener - Ralph Hasenhüttl<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions17">
+ <img src="img/tottenham.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Tottenham</k></h3>
+ 
+<div class="modal fade" id="myOptions17" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Tottenham Hotspur Football Club<br>
+Przydomek - Spurs<br>
+Barwy - biało-granatowe<br>
+Data założenia - 1882<br>
+Debiut w najwyższej lidze - 1909<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - Tottenham Hotspur Stadium<br>
+Prezes - Daniel Levy<br>
+Trener - José Mourinho<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions18">
+ <img src="img/watford.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Watford</k></h3>
+ 
+<div class="modal fade" id="myOptions18" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Watford Football Club<br>
+Przydomek - The Hornets (Szerszenie)<br>
+Barwy - żółto-czarno-czerwone<br>
+Data założenia - 1881<br>
+Debiut w najwyższej lidze - 1982<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - Vicarage Road<br>
+Trener - Nigel Pearson<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions19">
+ <img src="img/wolwes.jpg"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>Wolverhampton Wanderers</k></h3>
+ 
+<div class="modal fade" id="myOptions19" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	Wolverhampton Wanderers Football Club<br>
+Przydomek - The Wolves (Wilki)<br>
+Barwy - żółto-czarne     <br>
+Data założenia - 1877<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - Molineux Stadium<br>
+Prezes - Jeff Shi<br>
+Trener - Nuno Espírito Santo<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+ <a href="#" data-toggle="modal" data-target="#myOptions20">
+ <img src="img/westham.png"  width="400px" height="400px" class="img-circle img-fluid rounded-circle">
+ </a>
+ <h3 class="text-center text-info"><k>West Ham United</k></h3>
+ 
+<div class="modal fade" id="myOptions20" tabindex="-1" role="dialog" aria-labelledby="myOptionsLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3><j>
+Pełna nazwa	West Ham United Football Club<br>
+Przydomek - The Hammers (Młoty)<br>
+Barwy - bordowo-niebieskie<br>
+Data założenia - 1895<br>
+Liga - Premier League<br>
+Państwo	- Wielka Brytania<br>
+Stadion - Stadion Olimpijski<br>
+Trener - David Moyes<br>
+</j>
+</h3>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+</div> 
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="trzy">
+<div class="trzyy">
+    <div class="container">
+<h1><g>Top six (najlepsze zespoły)</g></h1>
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+		    <div class="row">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="5" class=""></li>
+		</div>
+          </ol>
+		  
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="img/arsenal.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+            <div class="carousel-item"><img src="img/chelsea.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+            <div class="carousel-item"><img src="img/manutd.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+            <div class="carousel-item"><img src="img/mancity.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+			<div class="carousel-item"><img src="img/liverpool.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+			<div class="carousel-item"><img src="img/totki.jpg" class="mx-auto d-block" class="img-circle img-fluid"></div>
+			</div>
+			
+         </div> 
+		 </div> 
+        </div>
+	
+</section>
+
+<section id="cztery">
+<div class="czteryy">
+    <div class="container">
+<h1><g>Ciekawostki Premier League</g></h1>
+<z>
+Premier Leagu jest najczęściej oglądaną ligą piłkarską na świecie<br>
+
+Liga Angielska transmitowana jest w 212 krajach świata<br>
+
+Piłkarze Premier League mają najwyższe pensje z pośród wszystkich lig świata<br>
+
+Na koniec każdego sezonu najlepszy strzelec otrzymuje złoty but<br>
+
+Puchar za zdobycie mistrzostwa waży około 10 kg<br>
+
+20 września 2007 roku padła największa ilość bramek w historii Premier League. FC Portsmouth pokonał FC Reading 7 do 4<br>
+
+Najwięcej bramek w jednej kolejce padło w 42 kolejce sezonu 1992/93 – 53 (średnio na mecz 4,82)<br>
+
+Od 2016 roku Premier League nie ma sponsora <br>
+
+Od 2001 roku mecze ligi angielskiej rozgrywane są piłkami Nike<br>
+
+Najdroższym ligowym zakupem było sprowadzenie w sezonie 2016/17 do Manchesteru United Paula Pogbe za 105 mln euro<br>
+
+Najwięcej widzów – 83 200, oglądało mecz Tottenham Hotspur – FC Arsenal rozegrany 10 lutego 2018 roku<br>
+
+Najwięcej meczów w historii Premier league rozegrał Gareth Barry – 653 mecze (na boisku spędził ponad 54 400 minut)<br>
+
+Najwięcej bramek w historii Premier league strzelił Alan Shearer – 260 (441 meczy)<br>
+</z>
+
+</div>
+</div>
+</section>
+
+<section id="piec">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="img/plfilm.mp4" allowfullscreen></iframe>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="stopka">
+<a href="#"  data-toggle="modal" data-target="#myModal">
+<h2>Polityka prywatności<h2/>
+</a>
+</div>
+
+</footer> 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+ <div class="modal-content">
+ 
+ 
+ 
+ <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+ <h4 class="modal-title" id="myModalLabel"></h4>
+</div> 
+ <div class="modal-body">
+<h3>Prywatność</h3>
+<p>
+Twoje dane osobowe mogą być przetwarzane w sposób zautomatyzowany, jednakże nie będzie to wywoływać 
+wobec Ciebie żadnych skutków prawnych lub w podobny sposób istotnie wpływać na Twoją sytuację.
+</p>
+
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+</div> 
+</div>
+
+</div>
+</div>
+</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="js/controllers.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="bower_components/dist/angular-clock.js"></script>
+	
+</body>
+</html>

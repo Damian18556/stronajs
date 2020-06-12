@@ -1,0 +1,77 @@
+.jumbotron
+{
+	background: url('../img/l2.png') top center fixed;
+	background-size: auto;
+	font-size:18px; 
+	color:blue; 
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body
+{
+	background: url('../img/cos2.jpg') top center fixed;
+	background-size: cover;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.h3
+{
+	float: center;	
+}
+g
+{
+	color: gold;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+k
+{
+	font-size:35px;
+	color: #33FF00;
+	font-family: 'Nanum Brush Script', cursive;
+}
+
+j
+{
+	font-size:30px;
+	color: black;
+}
+z
+{
+	font-size: 20px;
+	color: #FF7F00;
+}
+.trzyy
+{
+	color: yellow;
+	float: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.dwaa
+{
+	color: yellow;
+	float: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.czteryy
+{
+	float: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.stopka
+{
+	float: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	
